@@ -10,11 +10,36 @@ body {
 .file-action-container {
   height: 3rem;
   background-color: lightblue;
+  display: flex;
+  align-items: flex-end;
+}
+
+.file-action {
+  margin: 0.5rem;
 }
 
 .cellprop-action-container {
   height: 3rem;
   background-color: lightcoral;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.cellprop-action-container > * {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.cellprop-action-container > select {
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.font-family,
+.font-size {
+  padding: 0.125rem;
 }
 
 .formula-action-container {
